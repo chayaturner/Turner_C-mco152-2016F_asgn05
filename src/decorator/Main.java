@@ -4,8 +4,16 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		System.out.println("Div tag with name:\n");
 		HTMLtag tag1 = new DivTag();
 		tag1.setName("Touro College");
+		System.out.println(tag1.getTag());
+		System.out.println();
+		
+		System.out.println("Div tag with name and <em> decorator:\n");
+		tag1 = new EmTag(tag1);
+		System.out.println(tag1.getTag());
+		System.out.println();
 		
 		HTMLtag tag2 = new PTag();
 		tag2.setName("Computer Methodology");
@@ -19,10 +27,9 @@ public class Main {
 		HTMLtag tag4 = new HTag(2);
 		tag4.setName("Tag 4");
 		
-		System.out.println(tag1.getHtmlCode());
-		System.out.println(tag2.getHtmlCode());
-		System.out.println(tag3.getHtmlCode());
-		System.out.println(tag4.getHtmlCode());
+		//System.out.println(tag2.getHtmlCode());
+		//System.out.println(tag3.getHtmlCode());
+		//System.out.println(tag4.getHtmlCode());
 	}
 
 }

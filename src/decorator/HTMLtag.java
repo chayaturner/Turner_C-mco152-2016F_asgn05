@@ -8,7 +8,7 @@ public abstract class HTMLtag {
 	protected boolean idSet;
 	protected String htmlCode;
 	
-	public String getHtmlCode(){
+	public String getTag(){
 		if (!nameSet && !idSet){
 			htmlCode = "<" + tag + "></" + tag + ">";
 		}
