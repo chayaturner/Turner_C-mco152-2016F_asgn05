@@ -4,7 +4,7 @@ public class InputTag extends HTMLtag {
 	
 	private String type, value, event;
 	private boolean typeSet, valueSet, eventSet;
-	private String attributes;
+	private String attributes = "";
 
 	public InputTag(){
 		tag = "input";

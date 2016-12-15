@@ -25,10 +25,9 @@ public class Main {
 		System.out.println(tag2.getTag());
 		System.out.println();
 		
-		System.out.println("Input tag with type, value, event, name "
+		System.out.println("Input tag with type, value, event "
 				+ "and an a decorator with href attribute:");
 		HTMLtag tag3 = new InputTag();
-		tag3.setName("Google");
 		InputTag input = new InputTag();
 		input.setType("button");
 		input.setValue("action");
@@ -36,7 +35,7 @@ public class Main {
 		tag3 = input;
 		ATag aTag = new ATag(tag3);
 		aTag.setHref("www.Google.com");
-		tag3 = aTag;
+		tag3= aTag;
 		System.out.println(tag3.getTag());
 		System.out.println();
 		
