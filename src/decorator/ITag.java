@@ -2,7 +2,7 @@ package decorator;
 
 public class ITag extends TagDecorator {
 
-		HTMLtag htmlTag;
+		private HTMLtag htmlTag;
 
 		public ITag(HTMLtag htmlTag){
 			this.htmlTag = htmlTag;
@@ -10,7 +10,7 @@ public class ITag extends TagDecorator {
 		
 		@Override
 		public String getTag() {
-			return "<i>" + htmlTag.getTag() + "<i>";
+			return "<i>" + htmlTag.getTag() + "</i>";
 		}
 	}
 

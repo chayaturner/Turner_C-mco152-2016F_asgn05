@@ -2,7 +2,7 @@ package decorator;
 
 public class EmTag extends TagDecorator {
 
-	HTMLtag htmlTag;
+	private HTMLtag htmlTag;
 
 	public EmTag(HTMLtag htmlTag){
 		this.htmlTag = htmlTag;
@@ -10,6 +10,6 @@ public class EmTag extends TagDecorator {
 	
 	@Override
 	public String getTag() {
-		return "<em>" + htmlTag.getTag() + "<em>";
+		return "<em>" + htmlTag.getTag() + "</em>";
 	}
 }

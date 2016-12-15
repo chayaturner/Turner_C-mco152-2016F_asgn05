@@ -2,7 +2,7 @@ package decorator;
 
 public class StrongTag extends TagDecorator {
 
-		HTMLtag htmlTag;
+		private HTMLtag htmlTag;
 
 		public StrongTag(HTMLtag htmlTag){
 			this.htmlTag = htmlTag;
@@ -10,7 +10,7 @@ public class StrongTag extends TagDecorator {
 		
 		@Override
 		public String getTag() {
-			return "<strong>" + htmlTag.getTag() + "<strong>";
+			return "<strong>" + htmlTag.getTag() + "</strong>";
 		}
 	}
 
